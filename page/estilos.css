@@ -1,0 +1,918 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    background-color: black;
+    color:white;
+    margin:0px 3px;
+}
+
+
+/*
+[Reemplazo por BOOTSTRAP]
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo nav nav nav"
+    "tituloSeccion tituloSeccion tituloSeccion tituloSeccion"
+    ;
+    background-image: linear-gradient(to top,black 10% ,rgb(31, 26, 26));
+
+}*/
+
+
+.logo img{
+    grid-area:logo;
+    height:40px;
+    margin-top:2px;
+    margin-left:1px;
+}
+
+.logo img:hover{
+    height:41px;
+    margin-top:1px;
+    margin-left:1px;
+}
+
+/*NAV [reemplazo bootstrap]
+nav{
+    grid-area:nav;
+    height: 58px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    background:grey;
+    border-radius: 5px;
+
+
+}
+
+nav ul li{
+    display:inline-block;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding:20px;
+    display:block;
+
+}
+
+nav ul li a:hover{
+   background:black;
+   border-right:1px solid white;
+   border-left:1px solid white;
+   border-radius: 5px;
+   color:white;
+}
+
+*/
+
+.titulosSeccion{ 
+    background-image: linear-gradient(to top,black 20% ,rgb(61, 50, 50));
+    border:1px solid white;
+    height:45px;
+    text-align: center;
+    font-size: 30px;
+    margin-top:7px;
+    font-family: 'Cabin', sans-serif;
+    grid-area: tituloSeccion;
+    display: block;
+}
+
+/*FIN HEADER (Todas las pestañas)*/
+
+
+/*COMIENZO CONTENIDO [INDEX]*/
+
+.itemImagenParrafoIndex{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.3fr 0.5fr;
+    grid-template-areas: 
+    "parrafo parrafo parrafo imagen"
+    ". . . . "
+    "botones botones botones botones"
+    ;
+    border:1px solid white;
+    margin-top:-7px;
+    color:black;
+    background-image: linear-gradient(to top,black 10% ,white);
+}
+
+.padreImagenIndex{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.imagenIndex{
+    height:230px;
+    width:220px;
+    border:2px outset white;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    grid-area:imagen;
+}
+
+.parrafoIndex{
+    grid-area: parrafo;
+    margin-left:10px;
+    margin-top:12px;
+    text-align: center;
+
+}
+
+.divBotonesIndex{
+    grid-area: botones;
+    margin-left:70px;
+    margin-top:15px;
+}
+
+
+
+.divBotonesIndex a {
+    padding:18px;
+    width:120px;
+    border:1px solid black;
+    box-shadow: 6px 6px 6px white;
+    border-radius:5px;
+    text-decoration: none;
+    color:white;
+    background:black;
+    text-align: center;
+    white-space: nowrap;
+    margin:0 50px 0 50px;
+}
+
+.divBotonesIndex a:hover {
+    background:white;
+    color:black;
+    box-shadow: 6px 6px 6px black;
+    border:none;
+}
+
+/*PROYECTOS*/
+
+/*FOOTER SECCION*/
+
+
+
+.padreFooterIndex {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "footer footer footer footer";
+}
+
+.padreFooterSobre{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "footerS footerS"
+}
+
+.footerIndex , .footerProyectos ,.footerTecnologias {
+    background-color: grey;
+    color:white;
+    border:2px solid white;
+    margin-left:2px;
+    margin-right:2px;
+    grid-area: footer; 
+    margin-top:100px;
+}
+
+.footerSobreMi {
+    background-color: grey;
+    color:white;
+    border:2px solid white;
+    grid-area: footerS; 
+    margin-top:50px;
+    width: 100%;
+
+}
+
+.footerIndex a , .footerProyectos a , .footerTecnologias a {
+    
+   text-decoration: none;
+   color:white;
+   margin:20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerSobreMi a{
+    text-decoration: none;
+    color:white;
+    margin:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.copyright{
+    float:right;
+    color:white;
+    grid-area: copy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+
+/*COMIENZO CONTENIDO [PROYECTO]*/
+
+.itemProyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "proyecto1 proyecto2"
+    "proyecto3 proyecto4"
+    ;
+
+}
+
+
+
+/*Listado Proyectos*/
+.foto-proyecto{
+    height: 300px;
+    width:100%;
+    opacity: 0.2;
+}
+
+.foto-proyecto:hover{
+    border:1px solid white;
+    animation: change-image 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes change-image {
+    0%{
+        opacity:.5;
+        height:280px;
+        width:90%;
+    }
+
+    50%{
+        opacity: .75;
+    }
+
+
+    100%{
+        opacity: 1;
+        height:300px;
+        width:100%;
+
+    }
+    
+}
+
+.proyecto1{
+    grid-area: proyecto1;    
+}
+
+.proyecto2{
+    grid-area: proyecto2;    
+}
+
+.proyecto3{
+    grid-area: proyecto3;    
+}
+
+.proyecto4{
+    grid-area: proyecto4;    
+}
+
+.proyectoBotones{
+    display:block;
+    margin-top:25px;  
+    text-align: center;  
+}
+
+.proyectoBotones ul li {
+    background-color: white;
+    display:inline;
+    margin:5px;
+}
+
+.proyectoBotones ul li a{
+    background-color: lightgrey;
+    color:black;
+    text-decoration: none;
+    border:2px solid white;
+    padding:10px;
+}
+
+.proyectoBotones ul li a:hover{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border:2px solid white;
+    padding:10px;
+
+
+}
+
+.ingresar-proyecto{
+    display:block;
+    width:190px;
+    text-decoration:none;
+    background-color: black;
+    padding:15px;
+    color:white;
+    border:3px solid white; 
+    border-radius: 12px;
+    text-align: center;
+    margin:30px auto auto auto;
+
+}
+
+/*.ingresar-proyecto:hover{
+    display:block;
+    width:190px;
+    text-decoration:none;
+    background-color: white;
+    padding:15px;
+    color:black;
+    border:3px solid rgb(41, 39, 39); 
+    border-radius: 12px;
+    text-align: center;
+    margin:30px auto auto auto;
+}
+*/
+
+/*Animaciones*/
+
+.ingresar-proyecto:hover{
+    animation: change-button 2s;
+}
+
+@keyframes change-button{
+    0%{
+        width:80px;
+        color:black;
+        font-size: 5px;
+    }
+
+   50%{
+       width:120px;
+        font-size: 8px;
+        background-color: rgb(0, 0, 0);
+        color:grey;
+   }
+
+    75%{
+        width:190px;
+    }
+     
+
+
+}
+
+
+
+
+.tituloSeccionProyecto{
+    background-image: linear-gradient(to bottom,grey 10% ,black);
+    border:1px solid white;
+    height:35px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/*TECNOLOGIAS*/
+.itemTecnologias{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr  ;
+    grid-template-areas:
+    "nombreTecnologia"
+    "general"
+    "nombreTecnologia"
+    "frontend"
+    "nombreTecnologia"
+    "backend"
+    "nombreTecnologia"
+    "dataA"
+    ;
+}
+
+.titulosTecnologia {
+    grid-area: nombreTecnologia;
+    background-image: linear-gradient(to bottom,grey 10% ,black);
+    border:1px solid white;
+    height:35px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.logoTecnologia{
+    width:200px;
+    height:150px;
+    padding:30px;
+    display:inline-block;
+}
+
+.tecnologiaGeneral{
+    grid-area:general;
+    border:1px solid white;
+}
+
+.tecnologiaFrontend{
+    grid-area:frontend;
+    border:1px solid white;
+}
+
+.tecnologiaBackend{
+    grid-area:backend;
+    border:1px solid white;
+}
+
+.tecnologiaData{
+    grid-area:dataA;
+    border:1px solid white;
+}
+
+/*SOBRE MI*/
+
+.itemSobreMi{
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen botones "
+    "parrafo parrafo "
+    ;
+
+}
+
+/* 
+.itemSobreMi{
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen botones "
+    "parrafo parrafo "
+    ;
+}
+*/
+
+.padreImagenSobreMi{
+    grid-area: imagen;
+    display:flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left,black 20% ,rgb(31, 26, 26));
+
+}
+
+
+.padreImagenSobreMi p{
+    font-size: 50px;
+    margin: auto;
+}
+
+
+
+.imagen-sobre-mi{
+    height: 300px;
+    width:250px;
+    margin: auto;
+    border-radius: 20%;
+    border:3px outset black;
+}
+
+.cv-sobre-mi{
+    grid:botones;
+    margin:auto;
+    background-image: linear-gradient(to right,black 20% ,rgb(31, 26, 26));
+}
+
+.botones-sobre-mi{
+    text-decoration: none;
+    background: black;
+    border-bottom: 5px solid grey;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px white;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    margin:70px;
+    display:block;
+}
+
+.botones-sobre-mi:hover{
+    text-decoration: none;
+    background: white;
+    border-bottom: 5px solid black;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px white;
+    color: black;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    margin:70px;
+    display:block;
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 1s;
+}
+
+.parrafoSobreMi{
+    grid-area: parrafo;
+}
+
+.parrafoSobreMi h3{
+    border:1px solid white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sobre-mi-texto{
+    background-color: black;
+    border:1px solid white;
+}
+
+/*CONTACTO */
+
+.itemContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "formulario formulario formulario"
+    "tituloRedes tituloRedes tituloRedes"
+    "redes redes redes"
+    ;
+}
+
+.div-contacto{
+    display:block;
+    text-align: center;
+    width:60%;
+    margin:auto;
+    margin-top:25px;
+    grid-area:formulario;
+}
+
+
+input , textarea{
+    width:100%;
+    background:white;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom:16px;
+    border: 2px outset grey;
+    color:black;
+}
+
+
+ input:focus,  textarea:focus {
+    width: 103%; 
+    transition: all 1s;       
+ }
+ 
+
+input[type="submit"]{
+    width:50%;
+    background:black;
+    border:2px outset white;
+    padding:15px;
+    margin:10px;
+    color:white;
+    font-size:16px;
+    
+}
+
+
+input[type="submit"]:hover{
+    width:60%;
+    background:rgba(194, 210, 231, 0.425);
+    border:2px solid white;
+    padding:15px;
+    margin:10px;
+    color:white;
+    font-size:16px;   
+}
+
+
+.redes {
+    grid-area:redes;
+    width:100%;
+    height:100%;
+    margin:auto;
+    margin-top:15px;
+    background: linear-gradient(to bottom,black ,white);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.contenedorTituloRedes{
+    grid-area: tituloRedes;
+
+}
+
+.titulosRedes{
+    background-image: linear-gradient(to bottom,black 20% ,rgb(31, 26, 26));
+    height:45px;
+    text-align: center;
+    font-size: 30px;
+    border:1px solid white;
+}
+
+.redesLogo{
+    display:block;
+    margin:auto;
+
+    
+}
+
+.redesLogo ul{
+    list-style-type: none;
+}
+
+.redesLogo ul li{
+    display:inline-block;
+}
+
+.redesLogo ul li a{
+    display:inline-block;
+    margin:auto;
+}
+
+
+.logos-redes{
+    margin-left:75px;
+    margin-top:10px;
+    height:80px;
+    width:80px;
+}
+.logos-redesG{
+    margin-left:75px;
+    margin-top:10px;
+    height:80px;
+    width:160px;
+}
+
+
+
+/*BOOTSTRAP*/
+/*HEADER [bootstrap]*/
+.navbar{
+    border:1px solid white;
+    display:block;
+}
+
+/*tecnologias*/
+
+.carousel{
+    margin-top:-10px;
+}
+
+.carousel-inner{
+    background-image: linear-gradient(to bottom,lightgrey 50% ,black);
+    border:1px solid white;
+}
+
+.carousel-inner h5 , .carousel-inner p{
+    color:black;
+}
+
+.carousel-item{
+    width:350px;
+    margin-left:500px;
+
+}
+
+.carousel-item img {
+    width:400px;
+    height:250px;
+    opacity: 0.6;
+    margin:auto;    
+}
+
+@media only screen and (max-width:700px){
+
+    /*HEADER [GENERAL]*/
+
+    header{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr ;
+        grid-template-areas: 
+        "logo"
+        "."
+        "nav"
+        "nav"
+        "nav"
+        "nav"
+        "nav"
+        "."
+        "tituloSeccion"
+        ;
+        
+    }
+
+    .logo {
+        margin:auto;
+        border: 1px solid white;
+    }
+
+    nav{
+        text-align: center;
+        display: block;
+    }
+   
+    
+    nav ul li{
+  
+        background-color: grey;
+        width:100%;
+        margin-left:0px;
+        border:1px solid white;
+    }
+
+    /*INDEX RESPONSIVE [GENERAL]*/
+
+
+    .itemImagenParrafoIndex{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: 
+        "imagen"
+        "parrafo"
+        "botones"
+        ;
+        color:white;
+        background-image: linear-gradient(black,grey) ;
+    }
+
+
+    .divBotonesIndex{
+        margin:auto;
+        display: inline-block;
+    }
+    
+    .divBotonesIndex a{
+        display:block;
+        margin:25px;
+    }
+
+    /*PROYECTOS RESPONSIVE*/
+
+    .itemProyectos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "proyecto1"
+        "proyecto2"
+        "proyecto3"
+        "proyecto4"
+        ;
+    }
+
+
+
+    .proyecto1{
+        margin-top:10px;
+    }
+    .proyectoBotones ul li a{
+        display: block;
+        width:200px;
+        margin: auto;
+    }
+
+    /*Sobre Mi RESPONSIVE */
+
+    .itemSobreMi{
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas:
+        "imagen"
+        "botones"
+        "parrafo"
+        ;
+    }
+
+    .padreImagenSobreMi{
+        background-image: none;
+        background-image: linear-gradient(to top,black 1% ,rgb(31, 26, 26));
+
+    }
+    
+
+    .cv-sobre-mi{
+        grid:botones;
+        background-image: none;    
+    }
+
+    .botones-sobre-mi{
+        margin:30px auto 30px auto;
+    }
+   
+
+    /*CONTACTO [RESPONSIVE]*/
+
+    .itemContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.1fr ;
+        grid-template-areas: none
+        "formulario"
+        "tituloRedes"
+        "redes";
+    }
+
+    .div-contacto{
+        width: 80%;
+    }
+
+    .div-contacto input[type="submit"]{
+        width: 80%;
+
+    }
+
+    .redes{
+        width:100%;
+        height:100%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+  
+
+    /* FOOTER [GENERAL] */
+
+
+    .padreFooter{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "footer"
+        
+    }
+
+   
+    
+
+
+    .footerIndex , .footerProyectos ,.footerTecnologias , .footerSobreMi{
+        margin-left:-2px;
+        margin-right:-2px;
+        margin-top:30px; 
+    }
+
+    
+    .footerIndex a ,.footerProyectos a , .footerTecnologias a , .footerSobreMi a{
+       margin:auto;
+       display: block;
+       border-bottom:1px solid white;
+       text-align: center;
+    }
+    
+
+    .copyright{
+        float:none;
+        text-align: center;
+        color:black;
+        font-size: 17px;
+
+    }       
+    
+
+
+}
